@@ -1,6 +1,6 @@
 import pytest
 
-from game import Game
+from game_ans import Game
 
 
 #@pytest.mark.skip
@@ -21,7 +21,7 @@ def test_각1점씩획득():
     assert 20 == game.score()
 
 
-@pytest.mark.skip
+#@pytest.mark.skip
 def test_스페어():
     game = Game()
     game.roll(5)
@@ -33,7 +33,7 @@ def test_스페어():
     assert 16 == game.score()
 
 
-@pytest.mark.skip
+#@pytest.mark.skip
 def test_스트라이크():
     game = Game()
     for i in range(12):
@@ -42,7 +42,7 @@ def test_스트라이크():
     assert 300 == game.score()
 
 
-@pytest.mark.skip
+#@pytest.mark.skip
 def test_샘플게임():
     game = Game()
     game.roll(1)
